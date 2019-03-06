@@ -9,9 +9,9 @@ This is a CH552 Devboard and repo for a new pcb buisness card.<br>
 	* Plastic Frog
 
 ### Dev Board Information ###
-Buttons can be sourced here - https://www.aliexpress.com/item/50pcs-lot-SMT-3X6X3-5MM-2PIN-Tactile-Tact-Push-Button-Micro-Switch-G71-Momentary-Free-Shipping/32668690358.html
-USB port can be sourced here - https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-LCSC-micro-5PAll-posts-are-not-guided-Flat-welding-High-temperature_C77238.html
-Finally, the CH552 can be sourced here - https://lcsc.com/product-detail/USB_CH552G_C111292.html
+Buttons can be sourced here - https://www.aliexpress.com/item/50pcs-lot-SMT-3X6X3-5MM-2PIN-Tactile-Tact-Push-Button-Micro-Switch-G71-Momentary-Free-Shipping/32668690358.html<br>
+USB port can be sourced here - https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-LCSC-micro-5PAll-posts-are-not-guided-Flat-welding-High-temperature_C77238.html<br>
+Finally, the CH552 can be sourced here - https://lcsc.com/product-detail/USB_CH552G_C111292.html<br>
 
 ### Business Card Information ###
 In development, I have not even started the software. This is open source hardware like all of my designs.
