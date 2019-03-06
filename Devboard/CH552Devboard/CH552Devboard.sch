@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CH552:CH552T U1
+L CH552Devboard-rescue:CH552T-CH552 U1
 U 1 1 5C6D8296
 P 6300 3450
 F 0 "U1" H 6325 4025 50  0000 C CNN
