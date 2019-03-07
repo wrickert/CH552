@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "PlasticFrogLogo")(type KiCad)(uri "$(KIPRJMOD)/PlasticFrogLogo.pretty")(options "")(descr ""))
+)

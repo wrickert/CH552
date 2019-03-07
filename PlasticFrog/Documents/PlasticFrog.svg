@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40.0mm"
+   height="20.0mm"
+   viewBox="0 0 40.0 20.0"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="PlasticFrog.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="57.961422"
+     inkscape:cy="31.015558"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g832"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     borderlayer="true">
+    <inkscape:grid
+       id="grid816"
+       units="mm"
+       type="xygrid"
+       empspacing="1"
+       spacingy="2.54"
+       spacingx="2.54" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g822"
+     sodipodi:insensitive="true"
+     inkscape:groupmode="layer"
+     inkscape:label="[fixed] BG">
+    <rect
+       id="rect820"
+       style="stroke:none;fill-opacity:1;fill:#FFFFFF"
+       height="20.0"
+       width="40.0"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g824"
+     inkscape:groupmode="layer"
+     inkscape:label="Edge.Cuts" />
+  <g
+     id="g826"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Cu-disabled" />
+  <g
+     id="g828"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Mask-disabled" />
+  <g
+     id="g830"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Silk-disabled" />
+  <g
+     id="g832"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Cu">
+    <g
+       style=""
+       id="g4586"
+       transform="translate(-0.01753214,-0.00505981)">
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="rect852"
+         d="M 6.2661743,5.5925025 V 3.1735311 H 35.27313 V 15.940486 H 6.2661743 v -2.417595"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.15000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="rect877"
+         d="M 6.2496743,5.5356073 H 9.3024774 V 13.57841 H 6.2496743"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.09090918;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4588"
+       cx="7.873642"
+       cy="14.710427"
+       r="0.45454541" />
+    <circle
+       r="0.45454541"
+       cy="4.3934712"
+       cx="7.873642"
+       id="circle4590"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.09090918;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     id="g834"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Mask-disabled" />
+  <g
+     id="g836"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Silk-disabled" />
+  <g
+     id="g838"
+     inkscape:groupmode="layer"
+     inkscape:label="Drill" />
+</svg>
