@@ -1,6 +1,7 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:74xx
+LIBS:PlasticFrog-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -68,9 +69,9 @@ Text GLabel 3650 2350 2    50   Input ~ 0
 D+
 Text GLabel 3650 2450 2    50   Input ~ 0
 D-
-Text GLabel 7050 2500 2    50   Input ~ 0
-D+
 Text GLabel 7050 2600 2    50   Input ~ 0
+D+
+Text GLabel 7050 2500 2    50   Input ~ 0
 D-
 $Comp
 L Device:C_Small C1
@@ -153,8 +154,8 @@ $Comp
 L Device:R_Small R1
 U 1 1 5C809640
 P 5750 2700
-F 0 "R1" V 5554 2700 50  0000 C CNN
-F 1 "330ohm" V 5645 2700 50  0000 C CNN
+F 0 "R1" V 5950 2700 50  0000 C CNN
+F 1 "330ohm" V 5850 2700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" H 5750 2700 50  0001 C CNN
 F 3 "~" H 5750 2700 50  0001 C CNN
 	1    5750 2700
@@ -195,17 +196,6 @@ Wire Wire Line
 Connection ~ 7750 2100
 Wire Wire Line
 	7750 2100 7850 2100
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5C809E26
-P 3800 3700
-F 0 "J2" H 3720 3275 50  0000 C CNN
-F 1 "Conn_01x04" H 3720 3366 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3800 3700 50  0001 C CNN
-F 3 "~" H 3800 3700 50  0001 C CNN
-	1    3800 3700
-	-1   0    0    1   
-$EndComp
 Text GLabel 6000 2500 0    50   Input ~ 0
 RST
 Text GLabel 4000 4250 2    50   Input ~ 0
@@ -256,22 +246,22 @@ F 3 "~" H 3800 4450 50  0001 C CNN
 $EndComp
 Text GLabel 4000 4650 2    50   Input ~ 0
 D+
-Text GLabel 4000 3500 2    50   Input ~ 0
+Text GLabel 5200 3800 2    50   Input ~ 0
 P1.4
-Text GLabel 4000 3600 2    50   Input ~ 0
+Text GLabel 5200 3900 2    50   Input ~ 0
 P1.5
-Text GLabel 4000 3700 2    50   Input ~ 0
+Text GLabel 5200 4000 2    50   Input ~ 0
 P1.6
-Text GLabel 4000 3800 2    50   Input ~ 0
-P1.7
+Text GLabel 5200 3450 2    50   Input ~ 0
+P1.0
 Text GLabel 6000 2100 0    50   Input ~ 0
 P1.4
 Text GLabel 6000 2200 0    50   Input ~ 0
 P1.5
 Text GLabel 6000 2300 0    50   Input ~ 0
 P1.6
-Text GLabel 6000 2400 0    50   Input ~ 0
-P1.7
+Text GLabel 6000 2600 0    50   Input ~ 0
+P1.0
 $Comp
 L power:VSS #PWR0111
 U 1 1 5C80A8B0
@@ -285,4 +275,35 @@ F 3 "" H 7100 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 2200 7100 2200
+NoConn ~ 6000 2000
+NoConn ~ 6000 2800
+NoConn ~ 6000 2900
+NoConn ~ 7050 2900
+NoConn ~ 7050 2800
+NoConn ~ 7050 2700
+NoConn ~ 7050 2400
+NoConn ~ 7050 2300
+NoConn ~ 6000 2400
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5C98599F
+P 5000 3450
+F 0 "J2" H 4920 3225 50  0000 C CNN
+F 1 "Conn_01x01" H 4920 3316 50  0000 C CNN
+F 2 "Card:TouchPad_small" H 5000 3450 50  0001 C CNN
+F 3 "~" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5C985AF2
+P 5000 3900
+F 0 "J4" H 4920 3575 50  0000 C CNN
+F 1 "Conn_01x03" H 4920 3666 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5000 3900 50  0001 C CNN
+F 3 "~" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
