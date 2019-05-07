@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name PlasticFrog-rescue)(type Legacy)(uri ${KIPRJMOD}/PlasticFrog-rescue.lib)(options "")(descr ""))
 )

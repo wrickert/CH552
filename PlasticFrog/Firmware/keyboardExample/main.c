@@ -1,5 +1,5 @@
-typedef unsigned char                 *Puint8_t;
-typedef unsigned char volatile          uint8_tV;
+typedef unsigned char                 *PUINT8;
+typedef unsigned char volatile          UINT8V;
 
 #include "ch554.h"
 #include "debug.h"
@@ -27,7 +27,7 @@ __xdata __at (0x0050) uint8_t  Ep1Buffer[DEFAULT_ENDP1_SIZE];
 __xdata __at (0x000a) uint8_t  Ep2Buffer[2*MAX_PACKET_SIZE];	 
 
 uint8_t   SetupReq,SetupLen,Ready,Count,FLAG,UsbConfig;
-Puint8_t  pDescr;                                                             
+PUINT8  pDescr;                                                             
 USB_SETUP_REQ   SetupReqBuf;    
 
 
@@ -74,7 +74,7 @@ __xdata uint8_t 	TK_Code[TOUCH_NUM] = {
 };		
 
 __xdata uint16_t 			Key_FreeBuf[TOUCH_NUM];
-__xdata uint8_tV			Touch_IN;		
+__xdata UINT8V			Touch_IN;		
 
 uint8_t TK_SelectChannel( uint8_t ch )
 {
@@ -93,7 +93,7 @@ uint8_t TK_Init( uint8_t channel)
 __xdata	uint8_t 	i,j;
 __xdata	uint16_t 	sum;
 __xdata	uint16_t 	OverTime;
-
+	
 	P1_DIR_PU &= ~channel;
 	P1_MOD_OC &= ~channel;
 	TKEY_CTRL |= bTKC_2MS ;
@@ -126,7 +126,7 @@ void	TK_int_ISR( void ) __interrupt (INT_NO_TKEY)
 __xdata	static uint8_t ch = 0;
 __xdata	uint16_t KeyData;
 	KeyData = TKEY_DAT;
-
+	
 	if( KeyData < ( Key_FreeBuf[ch] - TH_VALUE ) )
 	{
 		Touch_IN |=  1 << ( TK_Code[ch] - 1 );
@@ -138,7 +138,7 @@ __xdata	uint16_t KeyData;
 	TK_SelectChannel( ch );
 }
 
-
+                                           
 
 #define UsbSetupBuf     ((PUSB_SETUP_REQ)Ep0Buffer)
 #define DEBUG 0
@@ -507,7 +507,7 @@ void DeviceInterrupt(void) __interrupt (INT_NO_USB)
                 }
                 else if(Ep0Buffer[0] == 0)
                 {
-
+                    
                     numlock = 0;   
                 }				
             }
@@ -546,7 +546,7 @@ static void SendKey ( char *p )
 
 	char c = *p;
 	char d = 0;
-
+		
 	if( (c >= 'a') && (c <= 'z' )){
 		c = c - 'a' + 'A';
 		d=1;
@@ -648,7 +648,7 @@ if( readFlag == 1 )
 				readFlag=1;			
 				}			
 		}	
-
+	
 }
 
 
@@ -660,13 +660,13 @@ main()
     USBDeviceInit();   
 	TK_Init( BIT4+BIT5);	
 	TK_SelectChannel(0);	
-
+	
     P3_MOD_OC = P3_MOD_OC |(1<<LED_PIN1);
     P3_DIR_PU = P3_DIR_PU |	(1<<LED_PIN1);
     P3_MOD_OC = P3_MOD_OC |(1<<LED_PIN2);
     P3_DIR_PU = P3_DIR_PU |	(1<<LED_PIN2);
 
-
+	
 	TMOD = 0x11;
 	TH0 = (65536 - 2000)/256;  // f¨¹r Startwert 
 	TL0 = (65536 - 2000)%256;  // f¨¹r Startwert 
@@ -690,13 +690,13 @@ main()
 			if( Touch_IN & CH3 )b=1;
 			Touch_IN = 0;
 			}
-
-
+	
+	
         if(Ready)
         {
             HIDValueHandle();
         }           
 	}                                   
     }              
-
+       
 }
